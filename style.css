@@ -1,0 +1,40 @@
+/*
+    Theme Name: Freelancer's Theme
+    Author: Florim Bulica
+    Author URI: https://florimbulica.netlify.app
+    Description: Theme created for my task at Starlabs
+    Version: 1.0.0
+ */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import "./assets/css/root.css";
+@import "assets/css/global-classes.css";
+@import "assets/css/header.css";
+@import "assets/css/footer.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--body-bg-color);
+    color: var(--darklight-color);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100vh;
+    background-image: url("assets/images/pattern-rings.png");
+    background-repeat: no-repeat;
+    background-position: top 50px left -100px;
+}
+
+.contactbtn:hover {
+    opacity: .9;
+}
+
+.spacer {
+    border-bottom: 1px solid #fff;
+}

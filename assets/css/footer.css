@@ -1,0 +1,119 @@
+@import "root.css";
+
+.site-footer {
+    background: var(--footer-bg-color) url("../images/pattern-rings.png");
+    background-repeat: no-repeat;
+    background-position: top 70% left -100px;
+    min-height: 675px;
+}
+
+.site-footer .site-header {
+    position: relative;
+    top: 120px;
+    border-top: 1px solid var(--darklight-color);
+    padding-top: 2rem;
+}
+
+.site-footer {
+    margin-top: 3rem;
+}
+
+.main-side {
+    position: relative;
+    top: 50px;
+    padding: 1rem 1.5rem;
+    display: flex;
+}
+
+.main-side .left-side h2 {
+    font-size: 48px;
+    margin-bottom: 1rem;
+}
+
+.main-side .left-side p {
+    width: 70%;
+    line-height: 1.5rem;
+    font-size: 17px;
+}
+
+.left-side,
+.right-side {
+    width: 50%;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field-group {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.field-group label {
+    margin-bottom: 1.5rem;
+}
+
+.field-group:last-of-type label {
+    margin-bottom: 4rem;
+}
+
+.field-group input {
+    width: 390px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--darklight-color);
+    font-size: 18px;
+    line-height: 1.5rem;
+    color: var(--darklight-color);
+}
+
+.field-group input:focus {
+    border-bottom: 1px solid var(--underscore-color);
+}
+
+#contactForm .btn {
+    position: relative;
+    left: 130px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--underscore-color);
+    color: var(--darklight-color);
+    font-size: 18px;
+    cursor: pointer;
+    padding-bottom: .5rem;
+}
+
+#contactForm .btn:hover {
+    color: var(--underscore-color);
+}
+
+@media (max-width: 980px) {
+
+    .site-footer {
+        height: 100%;
+    }
+
+    .main-side {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-side {
+        width: 80%;
+        margin-bottom: 5rem;
+    }
+
+    .main-side .left-side p {
+        width: 100%;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+}
