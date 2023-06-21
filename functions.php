@@ -7,8 +7,14 @@ function include_stylesheet()
 
 function include_script()
 {
-    wp_enqueue_script('script', get_template_directory_uri() . './assets/js/main.js');
+    wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '1', true);
+    $data = array(
+        'freelancerName' => get_bloginfo('name')
+    );
+    wp_localize_script('script', 'freelancerData', $data);
 }
+
+
 
 function send_message()
 {
